@@ -13,29 +13,39 @@ client.on('message', message => {
 
 
 const Eris = require("eris");
-var iiserver = "466681413882609704";
-var smart= new Eris("NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0");
+var bot = new Eris('NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0');
+var id = "467857579150934027";
+//لا تعدل ولا شي تحت ذا//
+bot.on("ready", () => {
+onstart();
+});
 
-client.on("ready", ready => {
+function onstart(){
+
 setInterval(function(){
 
-client.editChannel("467857579150934027", {name : ".S"})
-client.editChannel("467857579150934027", {name : ".St"})
-client.editChannel("467857579150934027", {name : ".Sta"})
-client.editChannel("467857579150934027", {name : ".Star"})
-client.editChannel("467857579150934027", {name : ".Stars"})
-client.editChannel("467857579150934027", {name : ".Stars C"})
-client.editChannel("467857579150934027", {name : ".Stars Co"})
-client.editChannel("467857579150934027", {name : ".Stars Comm"})
-client.editChannel("467857579150934027", {name : ".Stars Commu"})
-client.editChannel("467857579150934027", {name : ".Stars Commun"})
-client.editChannel("467857579150934027", {name : ".Stars Communi"})
-client.editChannel("467857579150934027", {name : ".Stars Communit"})
-client.editChannel("467857579150934027", {name : ".Stars Community"})
+var currentTime = new Date(),
+hours = currentTime.getHours() + 0 ,
+minutes = currentTime.getMinutes(),
+seconds = currentTime.getSeconds();
 
+if (minutes < 10) {
+minutes = "0" + minutes;
+}
+var suffix = "صباحاَ";
+if (hours >= 12) {
+suffix = "مساء";
+hours = hours - 12;
+}
+if (hours == 0) {
+hours = 12;
+}
 
-}, 6000);
-});
+bot.editChannel(id, { name : "●⌠ " + "Time: " + hours + ":" + minutes + " " + suffix + " ⌡●"});
+}, 60000);
+
+}
+
 
 
 const developers = ["456641975932813345"]
