@@ -19,7 +19,6 @@ var smart= new Eris("NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0
 client.on("ready", ready => {
 setInterval(function(){
 
-client.editChannel("467857579150934027", {name : "."})
 client.editChannel("467857579150934027", {name : ".S"})
 client.editChannel("467857579150934027", {name : ".St"})
 client.editChannel("467857579150934027", {name : ".Sta"})
