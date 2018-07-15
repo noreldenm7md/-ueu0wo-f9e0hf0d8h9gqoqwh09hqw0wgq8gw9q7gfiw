@@ -11,44 +11,31 @@ client.on('message', message => {
   	}
 });
 
+
 const Eris = require("eris");
-var eris= "466681413882609704";
-var eris = new Eris("NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0");
- 
-eris.on("ready", ready => {
+var iiserver = "466681413882609704 ";
+var smart= new Eris("NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0");
+
+client.on("ready", ready => {
 setInterval(function(){
- 
-            var currentTime = new Date(),
-            hours = currentTime.getHours() + 0 ,
-            minutes = currentTime.getMinutes(),
-            seconds = currentTime.getSeconds(),
-            years = currentTime.getFullYear(),
-            month = currentTime.getMonth() + 1,
-            day = currentTime.getDate(),
-            week = currentTime.getDay();
-           
-             
- 
-            if (minutes < 10) {
-                minutes = "0" + minutes;
-            }
-            var suffix = "AM";
-            if (hours >= 12) {
-                suffix = "PM";
-                hours = hours - 12;
-            }
-            if (hours == 0) {
-                hours = 12;
-            }
 
-eris.editChannel("467857579150934027", {name : "🕐 Time   [" + hours + ":" + minutes  +" " + suffix + "]"}) 
-eris.editChannel("467857579150934027", {name : "📅 Date " + "[" + day + "-" + month + "-" + years + "]"})
-
-
+client.editChannel("467857579150934027", {name : "."})
+client.editChannel("467857579150934027", {name : ".S"})
+client.editChannel("467857579150934027", {name : ".St"})
+client.editChannel("467857579150934027", {name : ".Sta"})
+client.editChannel("467857579150934027", {name : ".Star"})
+client.editChannel("467857579150934027", {name : ".Stars"})
+client.editChannel("467857579150934027", {name : ".Stars C"})
+client.editChannel("467857579150934027", {name : ".Stars Co"})
+client.editChannel("467857579150934027", {name : ".Stars Comm"})
+client.editChannel("467857579150934027", {name : ".Stars Commu"})
+client.editChannel("467857579150934027", {name : ".Stars Commun"})
+client.editChannel("467857579150934027", {name : ".Stars Communi"})
+client.editChannel("467857579150934027", {name : ".Stars Communit"})
+client.editChannel("467857579150934027", {name : ".Stars Community"})
 
 
 }, 6000);
- 
 });
 
 
