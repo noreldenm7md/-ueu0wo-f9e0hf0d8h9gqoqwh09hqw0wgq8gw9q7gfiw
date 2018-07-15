@@ -13,7 +13,7 @@ client.on('message', message => {
 
 
 const Eris = require("eris");
-var iiserver = "466681413882609704 ";
+var iiserver = "466681413882609704";
 var smart= new Eris("NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0");
 
 client.on("ready", ready => {
