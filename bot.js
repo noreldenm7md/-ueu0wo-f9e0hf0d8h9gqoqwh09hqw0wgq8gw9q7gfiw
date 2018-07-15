@@ -13,7 +13,7 @@ client.on('message', message => {
 
 
 const Eris = require("eris");
-var bot = new Eris('NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0');
+var bot = new Eris(NDY3NjYxNjY2NTA3ODE2OTYy.Dit3dw.ocx9UufBH3YwA93PQ0FmJQR6q_0);
 var id = "467857579150934027";
 //لا تعدل ولا شي تحت ذا//
 bot.on("ready", () => {
